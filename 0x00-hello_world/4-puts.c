@@ -1,5 +1,8 @@
 #include<stdio.h>
-/*main function displays text using puts*/
+/*
+ *main - function displays text using puts
+ *return: 0
+ */
 
 int main(void)
 {
