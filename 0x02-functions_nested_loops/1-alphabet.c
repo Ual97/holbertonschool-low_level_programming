@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*main-function gives last digit form SRAND
+*print_alphabet-function gives last digit form SRAND
 *Return: 0
 */
 
