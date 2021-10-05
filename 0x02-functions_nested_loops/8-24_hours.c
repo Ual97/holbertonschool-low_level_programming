@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*print_last_digit - a function gives last digit form SRAND
-*@ld: the int value
+*jack_bauer - a function gives last digit form SRAND
+*
 *Return: 1 if c is lowercase and 0 otherwise
 */
 
