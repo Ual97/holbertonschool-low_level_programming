@@ -2,13 +2,14 @@
 
 /**
 *print_last_digit - a function gives last digit form SRAND
-*@int: the int value
+*@ld: the int value
 *Return: 1 if c is lowercase and 0 otherwise
 */
 
 int print_last_digit(int ld)
 {
 	int p;
+
 	p = (ld % 10);
 	if (p < 0)
 	{
