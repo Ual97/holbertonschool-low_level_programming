@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
-*program
-*print_alphabet_x10-function gives last digit form SRAND
-*Return: 0
+*print_alphabet_x10 - a function gives last digit form SRAND
+*Return: x10 a-z
 */
 
 void print_alphabet_x10(void)
