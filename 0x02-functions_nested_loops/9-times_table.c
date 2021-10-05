@@ -18,7 +18,7 @@ void times_table(void)
 		{
 			p = (h * m);
 
-			if (h == 0)
+			if (m == 0)
 			{
 				_putchar('0' + p);
 			}
