@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-*fizz_buzz - a function gives last digit form SRAND
-*Return: 1 if c is lowercase and 0 otherwise
+*main - a function gives last digit form SRAND
+*Return: 0 if c is lowercase and 0 otherwise
 */
 
 int main(void)
