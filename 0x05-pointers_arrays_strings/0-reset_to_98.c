@@ -2,6 +2,7 @@
 
 /**
 *reset_to_98 - function gives last digit form SRAND
+*@n: input
 *Return: 0
 */
 
