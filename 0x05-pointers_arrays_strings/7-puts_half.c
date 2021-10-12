@@ -1,9 +1,10 @@
 #include "main.h"
 
-/*
-*puts_half - prints half of  a string
-*@str: string input
-*/
+/**
+ * puts_half - a function that prints half of a string
+ * if odd n + 1 if even
+ * @str: string input
+ */
 
 void puts_half(char *str)
 {
