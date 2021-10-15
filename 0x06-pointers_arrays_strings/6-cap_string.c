@@ -12,7 +12,7 @@ char *cap_string(char *n)
 
 	for (i = 0; n[i] != 0; i++)
 	{
-		if (n[i] >= 97 && n[i] <= 122)
+		if (n[i] == n[0])
 		{
 			n[i] = n[i] - 32;
 		}
