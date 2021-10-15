@@ -16,7 +16,7 @@ char *leet(char *n)
 	{
 		for (j = 0; ltr[j] != 0; j++)
 		{
-			if (n[i] == leet[j])
+			if (n[i] == ltr[j])
 			{
 				n[i] = nmr[j];
 			}
