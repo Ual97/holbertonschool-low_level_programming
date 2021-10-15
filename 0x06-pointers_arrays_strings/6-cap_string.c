@@ -6,18 +6,21 @@
  */
 char *cap_string(char *n)
 {
-	int i;
-	int separators[] = {',', ';', '.', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
+	int i, j;
+	int separators[] = {',', ';', '.', '?', '"', '(', ')',
+		'{', '}', ' ', '\n', '\t'};
 
 	for (i = 0; n[i] != 0; i++)
 	{
-		if (n[i] == separators[])
+		for (j = 0; separators[j] != 0; j++)
 		{
-			i++;
-			if (n[i] >= 97 && n[i] <= 122)
+			if (n[i] == separators[j])
 			{
-				n[i] = n[i] - 32;
-				break;
+				i++;
+				if (n[i] >= 97 && n[i] <= 122)
+				{
+					n[i] = n[i] - 32;
+				}
 			}
 		}
 	}
