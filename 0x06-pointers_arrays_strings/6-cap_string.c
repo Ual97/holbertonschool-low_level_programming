@@ -20,10 +20,9 @@ char *cap_string(char *n)
 		{
 			if (n[i] == separators[j])
 			{
-				i++;
-				if (n[i] >= 97 && n[i] <= 122)
+				if (n[i + 1] >= 97 && n[i + 1] <= 122)
 				{
-					n[i] = n[i] - 32;
+					n[i + 1] = n[i + 1] - 32;
 				}
 			}
 		}
