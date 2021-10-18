@@ -11,11 +11,19 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != 0)
 	{
-		if (*haystack == *needle)
+		char *begin = haystack;
+		char *pattern = needle;
+
+		while (*haystack && *pattern && *haystack == *pattern)
 		{
-			return (haystack);
+			haystack++;
+			pattern++;
 		}
-		haystack++;
+		if (!*pattern)
+		{
+			return (begin);
+		}
+		haystack = begin + 1;
 	}
 	return (0);
 }
