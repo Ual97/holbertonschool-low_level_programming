@@ -13,8 +13,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, k, p;
 	char *conc;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	for (j = 0; s1[j] != '\0'; j++)
 		;
 	for (k = 0; s2[k] != '\0'; k++)
