@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int fd1, fd2, nread, nwrite, fdclose;
+	int fd1, fd2, nread, nwrite, fdclose, jk = 1024;
 	char buff[1024];
 
 	if (argc != 3)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
-	while (fd1 >= 1024)
+	while (jk == 1024)
 	{
 		nread = read(fd1, buff, 1024);
 		if (nread == -1)
