@@ -1,19 +1,24 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include "lists.h"
 
-int main(void)
+/**
+ * print_dlistint - a function that prints a doubly linked list
+ * @h: struct import
+ * Return: number of nodes
+ */
+
+size_t print_dlistint(const dlistint_t *h)
 {
-	int intsize;
-	float floatsize;
-	char charsize;
-	long int longintsize;
-	long long int longlongintsize;
+    size_t length;
 
-	printf("Size of a char: %zu byte(s)\n", sizeof(charsize));
-	printf("Size of an int: %zu byte(s)\n", sizeof(intsize));
-	printf("Size of a long int: %zu byte(s)\n", sizeof(longintsize));
-	printf("Size of a long long int: %zu byte(s)\n", sizeof(longlongintsize));
-	printf("Size of a float: %zu byte(s)\n", sizeof(floatsize));
-	return (0);
+   length = 0;
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+		length++;
+	}
+	return (length);
 }
