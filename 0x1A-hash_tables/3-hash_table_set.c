@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @ht: pointer to hash table
  * @key: key of the hash
  * @value: value to store
- * Return: head of the hash
+ * Return: new node
  */
 
 hash_node_t *add_ht_node(hash_node_t **ht, const char *key, const char *value)
