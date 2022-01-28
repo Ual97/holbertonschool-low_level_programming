@@ -25,8 +25,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	array = malloc(sizeof(*array) * size);
 	if (array == NULL)
 	{
-		free (table);
-		retrun (NULL);
+		free(table);
+		retrun(NULL);
 	}
 	while (i < size)
 	{
